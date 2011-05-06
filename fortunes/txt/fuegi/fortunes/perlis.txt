@@ -1,0 +1,16 @@
+In the long run, every program becomes rococo, and then rubble.
+		-- Alan Perlis
+%
+It is against the grain of modern education to teach children to
+program.  What fun is there in making plans, acquiring discipline in
+organizing thoughts, devoting attention to detail, and learning to be
+self-critical?
+		-- Alan Perlis
+%
+The computing field is always in need of new cliches.
+		-- Alan Perlis
+%
+You can measure a programmer's perspective by noting his attitude on
+the continuing viability of FORTRAN.
+		-- Alan Perlis
+%

@@ -1,0 +1,26 @@
+Bug, n.:
+	An aspect of a computer program which exists because the
+PROGRAMMER was thinking about Jumbo Jacks or stock options when s/he
+wrote the program.
+
+Fortunately, the second-to-last bug has just been fixed.
+		-- Ray Simard
+%
+C, n.:
+	A programming language that is sort of like Pascal except more
+like assembly except that it isn't very much like either one, or
+anything else.  It is either the best language available to the art
+today, or it isn't.
+		-- Ray Simard
+%
+Goto, n.:
+	A programming tool that exists to allow structured programmers
+to complain about unstructured programmers.
+		-- Ray Simard
+%
+Manual, n.:
+	A unit of documentation.  There are always three or more on a
+given item.  One is on the shelf; someone has the others.  The
+information you need is in the others.
+		-- Ray Simard
+%

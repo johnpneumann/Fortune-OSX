@@ -1,0 +1,13 @@
+Q: How many IBM cpu's does it take to do a logical right shift?
+A: 33.  1 to hold the bits and 32 to push the register.
+%
+Q: How many IBM CPU's does it take to execute a job?
+A: Four; three to hold it down, and one to rip its head off.
+%
+Q: How many IBM types does it take to change a light bulb?
+A: 100. Ten to do it, and 90 to write document number GC7500439-0001,
+   Multitasking Incandescent Source System Facility, of which 10% of
+   the pages state only "This page intentionally left blank", and 20%
+   of the definitions are of the form "A ...... consists of sequences
+   of non-blank characters separated by blanks".
+%

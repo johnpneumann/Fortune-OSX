@@ -1,0 +1,16 @@
+Ken Thompson has an automobile which he helped design.  Unlike most
+automobiles, it has neither speedometer, nor gas gage, nor any of the
+numerous idiot lights which plague the modern driver.  Rather, if the
+driver makes any mistake, a giant "?" lights up in the center of the
+dashboard.  "The experienced driver", he says, "will usually know
+what's wrong."
+%
+SCCS, the source motel!  Programs check in and never check out!
+		-- Ken Thompson
+%
+The steady state of disks is full.
+		-- Ken Thompson
+%
+When in doubt, use brute force.
+		-- Ken Thompson
+%
