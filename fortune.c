@@ -62,10 +62,13 @@ static const char sccsid[] = "@(#)fortune.c   8.1 (Berkeley) 5/31/93";
 
 /* CFS - additions for MacOS X Server and OpenStep */
 
-#include <sys/types.h>
-#include <sys/dir.h>
-#include <libc.h>
-#include <regex.h>
+# include <sys/types.h>
+# include <sys/dir.h>
+# include <libc.h>
+# include <regex.h>
+# include "regexpr.h"
+
+
 
 /* END CFS ADDITIONS */
 
@@ -213,7 +216,7 @@ char	*av[];
 #endif
 
 	init_prob();
-	
+
 	/* CFS - replaced call to srandomdev with srandom, since we don't have
 	         srandomdev on OpenStep or MacOS X Server */
 	srandom((int)(time((time_t *) NULL) + getpid()));
@@ -723,10 +726,10 @@ add_dir(fp)
 register FILEDESC	*fp;
 {
 	register DIR		*dir;
-	
+
 	/* CFS - Changed "dirent" to "direct" for OpenStep/MacOS X Server build */
 	register struct direct	*dirent;
-	
+
 	auto FILEDESC		*tailp;
 	auto char		*name;
 
