@@ -36,23 +36,23 @@ OBJS =
 all: fortune strfile unstr
 
 prepare:
-	mkdir -p work
+	mkdir -p build
 
 regexpr: prepare
 	$(CC) -c $(CFLAGS) $(LDFLAGS) regexpr.c
 
 fortune: prepare regexpr.o
 	@echo "#define FORTDIR \"$(DATAPATH)\"\n#define TRUEFORTDIR \"$(TRUEDATAPATH)\"" >pathnames.h
-	$(CC) $(CFLAGS) $(LDFLAGS) -o work/fortune fortune.c regexpr.o
+	$(CC) $(CFLAGS) $(LDFLAGS) -o build/fortune fortune.c regexpr.o
 
 strfile: prepare
-	$(CC) $(CFLAGS) $(LDFLAGS) -o work/strfile strfile.c 
+	$(CC) $(CFLAGS) $(LDFLAGS) -o build/strfile strfile.c
 
 unstr: prepare
-	$(CC) $(CFLAGS) $(LDFLAGS) -o work/unstr unstr.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o build/unstr unstr.c
 
 clean:
-	rm -rf package work *.o
+	rm -rf package build *.o
 	@echo "Cleaned"
 
 install:
@@ -63,7 +63,7 @@ install:
 	mkdir -p $(MANPATH)/man6
 	mkdir -p $(MANPATH)/man8
 
-	cp work/* $(GAMEPATH)/
+	cp build/* $(GAMEPATH)/
 	cp -r fortunes $(DATAPATH)/
 	cp fortune.6 $(MANPATH)/man6/
 	cp strfile.8 $(MANPATH)/man8/
@@ -76,7 +76,7 @@ package: all
 	@mkdir -p package/share/man/man6
 	@mkdir -p package/share/man/man8
 
-	@cp work/*		package/bin/
+	@cp build/*		package/bin/
 	@cp -R fortunes	package/var/
 	@cp fortune.6	package/share/man/man6
 	@cp strfile.8	package/share/man/man8
