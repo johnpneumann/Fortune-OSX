@@ -29,7 +29,7 @@ DATAPATH = /usr/local/var
 TRUEDATAPATH = /usr/local/var/fortunes
 
 MANPATH = /usr/local/share/man
-CFLAGS = -m32 -Os -pipe
+CFLAGS = -Os -pipe
 LDFLAGS =
 OBJS =
 
