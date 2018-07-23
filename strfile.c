@@ -178,7 +178,7 @@ char	**av;
 	 */
 
 	Tbl.str_longlen = 0;
-	Tbl.str_shortlen = ~((unsigned long) 0);
+	Tbl.str_shortlen = ~((unsigned int) 0);
 	Tbl.str_delim = dc;
 	Tbl.str_version = VERSION;
 	first = Oflag;
@@ -234,9 +234,9 @@ char	**av;
 			puts("There was 1 string");
 		else
 			printf("There were %ld strings\n", Num_pts - 1);
-		printf("Longest string: %lu byte%s\n", Tbl.str_longlen,
+		printf("Longest string: %iu byte%s\n", Tbl.str_longlen,
 		       Tbl.str_longlen == 1 ? "" : "s");
-		printf("Shortest string: %lu byte%s\n", Tbl.str_shortlen,
+		printf("Shortest string: %iu byte%s\n", Tbl.str_shortlen,
 		       Tbl.str_shortlen == 1 ? "" : "s");
 	}
 
